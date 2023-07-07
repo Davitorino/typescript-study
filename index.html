@@ -9,11 +9,28 @@
 </head>
 
 <body>
+  <script src="node_modules/systemjs/dist/system.js"></script>
   <script src="./introduction/basic.js"></script>
   <script src="./types/type.js"></script>
   <script src="./compiler/compiler.js"></script>
   <script src="./classes/classes.js"></script>
   <script src="./classes/desafio.js"></script>
+  <script src="./namespaces/geometriaCirc.js"></script>
+  <script src="./namespaces/geometriaRect.js"></script>
+  <script src="./namespaces/namespaces.js"></script>
+  <!-- <script src="./modulos/modulos.js"></script> -->
+  <script>
+    SystemJS.config({
+      baseUrl: '/modulos',
+      packages: {
+        '/modulos': {
+          defaultJSExtension: true,
+        }
+      }
+    })
+
+    SystemJS.import('./modulos/modulos.js')
+  </script>
 </body>
 
 </html>
