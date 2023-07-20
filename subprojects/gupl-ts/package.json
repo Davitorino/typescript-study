@@ -1,0 +1,26 @@
+{
+  "name": "gupl-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.16",
+    "browserify": "^17.0.0",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.7.0",
+    "tsify": "^5.0.4",
+    "typescript": "^5.1.6",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
